@@ -1,4 +1,4 @@
-package com.hrt.test;
+﻿package com.hrt.test;
 import redis.clients.jedis.Jedis;
 
 import redis.clients.jedis.exceptions.JedisConnectionException;
@@ -9,7 +9,6 @@ public class App {
     	
     	try {
         Jedis jedis = new Jedis("10.0.53.60", 6379);
-        
         System.out.println("连接成功");
         System.out.println("服务正在运行: " + jedis.ping());
         }catch (JedisConnectionException e)
