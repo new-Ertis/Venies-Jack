@@ -12,7 +12,6 @@ public class App {
         
         System.out.println("连接成功");
         System.out.println("服务正在运行: " + jedis.ping());
-        jedis.set( "jaydar", "kazak");
         }catch (JedisConnectionException e)
     	{
     		System.out.println("the error is " +  e.getMessage() + " " + " error  is  " + e.getLocalizedMessage());
