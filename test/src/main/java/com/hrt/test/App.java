@@ -8,6 +8,7 @@ public class App {
         //连接本地的 Redis 服务
     	
     	try {
+        System.out.println("jaydar");
         Jedis jedis = new Jedis("10.0.53.60", 6379);
         System.out.println("连接成功");
         System.out.println("服务正在运行: " + jedis.ping());
